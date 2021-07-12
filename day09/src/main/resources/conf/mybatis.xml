@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--设置日志-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    
+    <!--设置别名-->
+    <typeAliases>
+        <!--domain包中的类名就是别名-->
+        <package name="com.jin.domain"/>
+    </typeAliases>
+
+    <!--加载映射文件-->
+    <mappers>
+        <package name="com.jin.dao"/>
+    </mappers>
+</configuration>

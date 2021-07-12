@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jin.dao.ProvinceDao">
+    <!-- 使用insert, update, delete, select标签写sql语句 -->
+    <select id="selectAllProvinces" resultType="com.jin.domain.Province">
+        select id,name from provinces order by id
+    </select>
+</mapper>
